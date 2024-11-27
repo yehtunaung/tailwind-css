@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+
+</head>
+
+<body>
+    <div class="flex justify-center h-screen items-center">
+        <div>
+            <Button class="bg-pink-400 flex py-3 px-5 rounded-md hover:-translate-y-3 duration-700 hover:bg-red-300 transition border text-white"> 
+                <img src="../img/spinner-solid.svg" alt="" class="w-10 h-5 animate-spin">
+                Loading.. </Button>
+        </div>
+        <div>
+            <Button class="bg-pink-400 flex py-3 px-5 rounded-md hover:-translate-y-3 duration-700 hover:bg-red-300 transition border text-white"> 
+                <img src="../img/spinner-solid.svg" alt="" class="w-10 h-5 animate-ping">
+                Loading.. </Button>
+        </div>
+        <div>
+            <Button class="bg-pink-400 flex py-3 px-5 rounded-md hover:-translate-y-3 duration-700 hover:bg-red-300 transition border text-white"> 
+                <img src="../img/spinner-solid.svg" alt="" class="w-10 h-5 animate-bounce">
+                Loading.. </Button>
+        </div>
+             <div class="flex px-32 mb-4">
+                
+                    <span class="relative flex justify-end h-3 w-3">
+                        <Button disabled class="bg-green-500 flex h-16 rounded-md  py-3 px-5  border text-white"> 
+                            Notafication </Button>
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
+                      </span>
+            </div>
+
+    </div>
+</body>
+
+</html>
