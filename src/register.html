@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <div class="flex justify-center h-screen items-center ">
+        <div class=" p-5 rounded-lg shadow-lg lg:w-1/3	md:w-2/3 sm:w-full dark:bg-slate-500 ">
+            <h3 class="text-xl font-bold text-center dark:text-slate-900">Login</h3>
+            <div class="mb-3">
+                <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Email</label>
+                <input type="text" name="email"
+                    class="border-2 bg-slate-100 focus:bg-white rounded-xl border-purple-800 w-full p-2 "
+                    placeholder="Please Enter Email">
+            </div>
+            <div class="mb-3">
+                <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white ">Your Name</label>
+                <input type="text" name="user_name"
+                    class="border-2 bg-slate-100 focus:bg-white rounded-xl border-purple-800 w-full p-2 "
+                    placeholder="Please Enter Name">
+            </div>
+            <div class="mb-3">
+                <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+                <input type="password" name="password"
+                    class="border-2 bg-slate-100 focus:bg-white rounded-xl border-purple-800 w-full p-2 "
+                    placeholder="Please Enter password">
+            </div>
+            <div class="">
+                <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confrirm Password</label>
+                <input type="password" name="password"
+                    class="border-3 bg-slate-100 focus:bg-white rounded-xl w-full p-2 outline outline-2 -outline-offset-1 outline-purple-900 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                    placeholder="Please Enter password">
+
+            </div>
+
+
+            <button
+                class="bg-green-800 py-3 px-5 border rounded-lg w-full text-white mt-3 hover:scale-x-90 tranisation duration-500">Sign
+                Up</button>
+            <div class="flex justify-center border-b-2 p-3 mt-1 text-slate-600">
+                <span class="hover:underline underline-offset-1	">Already have an account?</span>
+            </div>
+
+            <div class="flex justify-between space-x-3">
+                <button class="border rounded-lg w-full  mt-3 flex items-center justify-center space-x-3">
+                    <img src="{{ asset('img/web/google.svg.png') }}" alt="" class="w-6">
+                    <span>Log In</span>
+                </button>
+                <button class="border rounded-lg w-full p-2 mt-3 flex items-center justify-center space-x-3">
+                    <img src="{{ asset('img/web/Facebook_f_logo_(2021).svg.png') }}" alt="" class="w-6">
+                    <span>Log In</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

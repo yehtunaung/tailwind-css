@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <div class="container text-white mx-auto sticky top-2">
+        <div class="flex justify-between items-center  bg-purple-200 py-3 dark:bg-slate-900">
+            <div class="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeOMdBwrt7kWQPfAYPwSrZTcA7cAqHIFSHHA&s" alt="" class="w-72 h-22">
+            </div>
+
+            <div>
+                <ul class="flex space-x-3">
+                    <li><a href="">Home</a> </li>
+                    <li>Home </li>
+                    <li>Home </li>
+                    <li><a href="">Register</a> </li>
+                </ul>
+            </div>
+
+            <div>
+                <label for="toggle" class="flex items-center cursor-pointer">
+                    <input type="checkbox" id="toggle" class="sr-only peer">
+                    <div
+                        class="block relative checked:bg-red-900 bg-blue-900 w-16 h-9 p-1 rounded-full before:absolute before:bg-white before:w-7 before:h-7 before:p-1 before:rounded-full before:transition-all before:duration-500 before:left-1 peer-checked:before:left-8 peer-checked:before:bg-slate-900">
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+    
+        const toggleBtn = document.getElementById('toggle');
+        toggleBtn.addEventListener('change', () => {
+            if (toggleBtn.checked) {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('data-theme' , 'dark')
+            } else {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('data-theme' , 'light')
+            }
+        })
+        if(localStorage.getItem('data-theme') === 'dark')
+        {
+            document.documentElement.classList.add('dark');
+            toggleBtn.setAttribute('checked' , true)
+        }else{
+            document.documentElement.classList.remove('dark');
+    
+        }
+    </script>
+</body>
+</html>
